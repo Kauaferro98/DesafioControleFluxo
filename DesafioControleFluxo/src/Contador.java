@@ -19,7 +19,7 @@ public class Contador {
 		
 	}
 	static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
-		int toatalIntercao = 0;
+		
         if (parametroUm > parametroDois)
             throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro, tente novamente");
 			
@@ -27,9 +27,9 @@ public class Contador {
         int contagem = parametroDois - parametroUm;
         for (int interacao = 1;interacao <=contagem ; interacao++){
             System.out.println("Imprimindo o número " + interacao);
-			toatalIntercao += interacao;
+			
         }
-		System.out.println("Total de interação foi de:"+ (toatalIntercao - 1));
+		
     }
 
     private static class ParametrosInvalidosException extends Exception {
